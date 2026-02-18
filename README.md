@@ -1,4 +1,5 @@
-Bharath's Portfolio ✨
+#Bharath's Portfolio ✨
+
 A modern, responsive portfolio website showcasing creative web development, UI/UX design, and digital creativity. Built with pure HTML, CSS, and vanilla JavaScript.
 
 🚀 Features
