@@ -572,48 +572,124 @@
       color: #151329;
     }
 
-    /* footer premium */
+    /* ————— improved footer ————— */
     .footer {
-      background: #100e22;
-      color: #ddd;
+      background: linear-gradient(145deg, #0c0a1c 0%, #181433 100%);
+      color: rgba(255, 255, 255, 0.75);
       text-align: center;
-      padding: 4rem 5% 2rem;
-      margin-top: 3rem;
+      padding: 5rem 5% 3rem;
+      margin-top: auto;
+      border-top: 1px solid rgba(200, 80, 192, 0.25);
+      box-shadow: 0 -20px 30px -10px rgba(0, 0, 0, 0.2);
+      position: relative;
     }
+
+    /* subtle glow line */
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      width: 80%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #C850C0, #FFCC70, #C850C0, transparent);
+      opacity: 0.5;
+    }
+
     .footer .logo {
-      font-size: 2.4rem;
-      -webkit-text-fill-color: white;
-      background: none;
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(130deg, #ffffff, #f0e9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline-block;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 15px rgba(255,204,112,0.3);
     }
+
     .footer h3 {
       color: #FFCC70;
-      -webkit-text-fill-color: initial;
-      font-weight: 400;
-      margin-bottom: 2rem;
+      font-weight: 350;
+      font-size: 1.3rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 2.4rem;
+      text-transform: uppercase;
+      background: linear-gradient(145deg, #FFCC70, #ffb347);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0.95;
     }
+
+    /* social links — refined */
     .social-links {
       display: flex;
       justify-content: center;
-      gap: 1.8rem;
-      margin-bottom: 2rem;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 2.8rem;
+      flex-wrap: wrap;
     }
+
     .social-links a {
       color: white;
-      background: rgba(255,255,255,0.08);
-      width: 52px;
-      height: 52px;
-      border-radius: 50px;
-      display: flex;
+      background: rgba(255, 255, 255, 0.04);
+      width: 56px;
+      height: 56px;
+      border-radius: 30px;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
-      transition: 0.2s;
-      border: 1px solid rgba(255,204,112,0.2);
+      font-size: 1.6rem;
+      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+      border: 1px solid rgba(255, 204, 112, 0.15);
+      backdrop-filter: blur(4px);
+      text-decoration: none;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
     }
+
     .social-links a:hover {
-      background: #FFCC70;
-      color: #100e22;
-      transform: translateY(-5px);
+      background: linear-gradient(135deg, #FFCC70, #C850C0);
+      color: #0c0a1c;
+      transform: translateY(-7px) scale(1.08);
+      border-color: transparent;
+      box-shadow: 0 18px 28px -8px rgba(255, 204, 112, 0.5);
+    }
+
+    /* optional brand-specific icon colors on hover (clean) */
+    .social-links a i {
+      transition: transform 0.2s;
+    }
+    .social-links a:hover i {
+      transform: scale(1.1);
+    }
+
+    .copyright {
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      border-top: 1px dashed rgba(255,204,112,0.2);
+      padding-top: 2rem;
+      max-width: 500px;
+      margin: 0 auto;
+      font-weight: 350;
+    }
+
+    .copyright span {
+      color: #FFCC70;
+      font-weight: 500;
+      -webkit-text-fill-color: #FFCC70;
+    }
+
+    /* dummy content for preview */
+    .dummy-content {
+      padding: 4rem;
+      text-align: center;
+      color: #222;
+      font-size: 1.5rem;
+      background: #f9f9ff;
     }
 
     /* responsiveness */
@@ -642,7 +718,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">◈ Portfolio</div>
+    <div class="logo">◈ B - Portfolio</div>
     <div class="header-actions">
       <button class="theme-toggle" id="themeToggle" aria-label="theme">🌙</button>
       <button class="nav-toggle" id="navToggle" aria-label="menu">☰</button>
@@ -671,20 +747,20 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="Bharath bG removePassport Pic.png" alt="Bharath">
+        <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\Bharath bG removePassport Pic.png" alt="Bharath">
       </div>
     </section>
 
     <!-- about section -->
     <section id="about" class="about">
       <div class="about-image">
-        <img src="Bharath AI image.png" alt="about visual">
+        <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\Bharath AI image.png" alt="about visual">
       </div>
       <div class="about-content">
         <h2>Design · Code · Elevate</h2>
         <p>I'm a Web Developer & Creative Designer with 3+ years of experience building responsive brands, UI systems, and high‑performance digital products.</p>
         <p>I am eager to contribute my technical skills, creativity, and problem-solving abilities to a dynamic organization and grow professionally while delivering impactful digital experiences.</p>
-        <a href="Bharath_Kr Resume 2k26.pdf" target="_blank" class="btn btn-primary">📄 curriculum vitae</a>
+        <a href="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\Bharath_Kr Resume 2k26.pdf" target="_blank" class="btn btn-primary">📄 curriculum vitae</a>
       </div>
     </section>
 
@@ -711,11 +787,11 @@
         <div class="experience-info">
           <div class="years-box">
             <h1>03+</h1>
-            <p>years of<br>full‑stack experience</p>
+            <p>years of<br>Experience</p>
           </div>
           <div class="call-box">
             <div class="phone-icon"><i class="fas fa-phone-alt"></i></div>
-            <div><h3>call anytime</h3><p>+91 8900909415</p></div>
+            <div><h3> Let's Talk</h3><p>+91 8900909415</p></div>
           </div>
         </div>
       </div>
@@ -728,10 +804,10 @@
         <p>Building solutions that combine creativity, strategy, and precision.</p>
       </div>
       <div class="service-grid">
-        <div class="service-card"><div class="icon"><i class="fas fa-pen-ruler"></i></div><h3>UI/UX</h3><p>intuitive, research‑driven interfaces</p></div>
-        <div class="service-card"><div class="icon"><i class="fas fa-code"></i></div><h3>frontend dev</h3><p>react, TS, responsive SPA</p></div>
-        <div class="service-card"><div class="icon"><i class="fas fa-bezier-curve"></i></div><h3>brand identity</h3><p>visual systems & storytelling</p></div>
-        <div class="service-card"><div class="icon"><i class="fas fa-chart-simple"></i></div><h3>digital marketing</h3><p>SEO, analytics, growth</p></div>
+        <div class="service-card"><div class="icon"><i class="fas fa-code"></i></div><h3>Front-end Development</h3><p></p></div>
+        <div class="service-card"><div class="icon"><i class="fas fa-pen-ruler"></i></div><h3>UI/UX Designing</h3><p></p></div>
+        <div class="service-card"><div class="icon"><i class="fas fa-bezier-curve"></i></div><h3>Creative Posters</h3><p></p></div>
+        <div class="service-card"><div class="icon"><i class="fas fa-chart-simple"></i></div><h3>Social Media Management</h3><p></p></div>
       </div>
     </section>
 
@@ -744,36 +820,40 @@
       <div class="portfolio-filter">
         <button class="filter-btn active" data-filter="all">ALL</button>
         <button class="filter-btn" data-filter="web">WEB</button>
-        <button class="filter-btn" data-filter="branding">BRANDING</button>
+        <button class="filter-btn" data-filter="branding">Creatives</button>
         <button class="filter-btn" data-filter="photography">PHOTOGRAPHY</button>
       </div>
       <div class="portfolio-grid">
         <!-- web -->
         <div class="portfolio-item" data-category="web">
-          <img src="Web HTT.png" alt="web project">
-          <div class="portfolio-info"><h3>heaven</h3><p>web design</p></div>
+          <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\Web HTT.png" alt="web project">
+          <div class="portfolio-info"><h3>Heaven Tours & Travels</h3><p>web design</p></div>
         </div>
         <div class="portfolio-item" data-category="web">
-          <img src="web 02.png" alt="urban nomad">
-          <div class="portfolio-info"><h3>urban nomad</h3><p>responsive web</p></div>
+          <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\web 02.png" alt="urban nomad">
+          <div class="portfolio-info"><h3>Resume Builder</h3><p>web design</p></div>
+        </div>
+        <div class="portfolio-item" data-category="web">
+          <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\web 3.jpg" alt="urban nomad">
+          <div class="portfolio-info"><h3>Voting Portal</h3><p>web design</p></div>
         </div>
         <!-- branding -->
         <div class="portfolio-item" data-category="branding">
-          <img src="ıs for everybody (A3).jpg" alt="sunrise">
-          <div class="portfolio-info"><h3>sunrise studio</h3><p>brand identity</p></div>
+          <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\ıs for everybody (A3).jpg" alt="sunrise">
+          <div class="portfolio-info"><h3>Yoga Creative</h3><p>Poster</p></div>
         </div>
         <div class="portfolio-item" data-category="branding">
-          <img src="Spark Tank Guest Creative.jpg" alt="coastal">
-          <div class="portfolio-info"><h3>coastal coffee</h3><p>packaging</p></div>
+          <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\Spark Tank Guest Creative.jpg" alt="coastal">
+          <div class="portfolio-info"><h3>Spark Tank</h3><p>Poster</p></div>
         </div>
         <!-- photography -->
         <div class="portfolio-item" data-category="photography">
-          <img src="Img 1.jpg" alt="cane&wood">
-          <div class="portfolio-info"><h3>cane & wood</h3><p>photography</p></div>
+          <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\Img 1.jpg" alt="cane&wood">
+          <div class="portfolio-info"><h3>Sea Port</h3><p>photography</p></div>
         </div>
         <div class="portfolio-item" data-category="photography">
-          <img src="pic.jpeg" alt="echo">
-          <div class="portfolio-info"><h3>echo sound</h3><p>digital campaign</p></div>
+          <img src="S:\VISUAL STUDIO CODE\Bharath Portfolio\Bharathportfolio\pic.jpeg" alt="echo">
+          <div class="portfolio-info"><h3>Beach View</h3><p>digital campaign</p></div>
         </div>
       </div>
     </section>
@@ -792,15 +872,15 @@
   </main>
 
   <footer class="footer">
-    <div class="logo">◈ Portfolio</div>
-    <h3>gradient spirit · human centered</h3>
+    <div class="logo">◈ B - Portfolio</div>
+    <h3>Creative Mind, Creative Works.</h3>
     <div class="social-links">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.linkedin.com/in/bharathkr8798/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/bharath_kr.8?igsh=aGgwdjd0MXgyeWZv" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Bharathkr8798" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:bharathkr8798@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
     </div>
-    <div class="copyright">© 2026 — crafted with ⚡ by Bharath</div>
+    <div class="copyright">© 2026 — crafted by ⚡ by Bharath</div>
   </footer>
 
   <script>
